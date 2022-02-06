@@ -135,12 +135,42 @@ def vihmavari():
     plt.grid(True)
     plt.show()
 def konn():
-    x1 = np.arange()
-    x2 = np.arange()
-    x3 = np.arange()
-    x4 = np.arange()
-    x5 = np.arange()
-    x6 = np.arange()
+    x1 = np.arange(-7, 7.5, 0.5)
+    y1 = (-3/49)*x1**2+8
+    x2 = np.arange(-7, 7.5, 0.5)
+    y2 = (4/49)*x2**2+1
+    x3 = np.arange(-6.8, -1.5, 0.5)
+    y3 = -0.75*(x3+4)**2+11
+    x4 = np.arange(2, 7.3,0.5)
+    y4 = -0.75*(x4-4)**2+11
+    x5 = np.arange(-5.8, -2.3,0.5)
+    y5 = -1*(x5+4)**2+9
+    x7 = np.arange(2.8, 6.3, 0.5)
+    y7 = -1*(x7-4)**2+9
+    x8 = np.arange(-4, 4.5, 0.5)
+    y8 = (4/9)*x8**2-5
+    x9 = np.arange(-5.2, 5.7,0.5)
+    y9 = (4/9)*x9**2-9
+    x10 = np.arange(-7, -2.3,0.5)
+    y10 = (-1/16)*(x10+3)**2-6
+    x11 = np.arange(2.8, 7.5,0.5)
+    y11 = (-1/16)*(x11-3)**2-6
+    x12 = np.arange(-7,0.5,0.5)
+    y12 = (1/9)*(x12+4)**2-11
+    x13 = np.arange(0,7.5,0.5)
+    y13 = (1/9)*(x13-4)**2-11
+    x14 = np.arange(-7,-4.0,0.5)
+    y14 = -1*(x14+5)**2
+    x15 = np.arange(4.5,7.5,0.5)
+    y15 = -1*(x15-5)**2
+    x16 = np.arange(-3,3.5,0.5)
+    y16 = (2/9)*x16**2+2
+    plt.plot(x1, y1,x2,y2,x3,y3,x4,y4,x5,y5,x7,y7,x8,y8,x9,y9,x10,y10,x11,y11,x12,y12,x13,y13,x14,y14,x15,y15,x16,y16)
+    plt.title('Ляга')
+    plt.ylabel('y')
+    plt.xlabel('x')
+    plt.grid(True)
+    plt.show()
 def figura():
     global var
     valik=var.get()
